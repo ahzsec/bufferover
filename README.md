@@ -1,9 +1,6 @@
 # bufferover
 bufferover is a DNS data extractor for penetration testers.
 
-# Screenshots
-![bufferover image](https://c.top4top.io/p_1714c2q1i1.png)
-
 # Installation
 - Install [jq](https://github.com/stedolan/jq) utilty.
 - `git clone https://github.com/ahmedcj/bufferover.git`
@@ -11,7 +8,7 @@ bufferover is a DNS data extractor for penetration testers.
 ```
 cp bufferover.sh /usr/bin/bufferover
 ```
-![part of system](https://e.top4top.io/p_1714zwzhp1.png)
+![part of system](https://g.top4top.io/p_1868o1map1.png)
 
 # Usage
 - To get a list of all options:
