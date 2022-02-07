@@ -7,13 +7,13 @@ bufferover is a DNS data extractor for penetration testers.
 # Installation
 - Install [jq](https://github.com/stedolan/jq) utilty.
 - `git clone https://github.com/ahmedcj/bufferover.git`
-
-# Usage
-To use the script as part of your linux system:
+- To use the script as part of your linux system:
 ```
 cp bufferover.sh /usr/bin/bufferover
 ```
-To get a list of all options:
+
+# Usage
+- To get a list of all options:
 ```
 ./bufferover.sh
 ```
