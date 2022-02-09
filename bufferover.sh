@@ -10,14 +10,14 @@ header(){ printf "\e[36mv1.1 @ phalanx project
 ██╔══██╗██║░░░██║██╔══╝░░██╔══╝░░██╔══╝░░██╔══██╗██║░░██║░╚████╔╝░██╔══╝░░██╔══██╗
 ██████╦╝╚██████╔╝██║░░░░░██║░░░░░███████╗██║░░██║╚█████╔╝░░╚██╔╝░░███████╗██║░░██║
 ╚═════╝░░╚═════╝░╚═╝░░░░░╚═╝░░░░░╚══════╝╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝\ntwitter: @0x0Cj\e[0m\n\n"
-printf "Usage: ./bufferover.sh DOMAIN [OPTION] [-o output_file]\n\nOptions:\n\n	-d	Domains Extraction\n 	-h	Hosts Extraction\n	-s	Subdomains Extraction\n	-sh	Subdomains Hosts Extraction\n	-o	Outfileing Data\n\n"
+printf "Usage: $(basename $0) DOMAIN [OPTION] [-o output_file]\n\nOptions:\n\n	-d	Domains Extraction\n 	-h	Hosts Extraction\n	-s	Subdomains Extraction\n	-sh	Subdomains Hosts Extraction\n	-o	Outfileing Data\n\n"
 }
 
 bufferover(){
 OUTPUT=$(curl -s https://tls.bufferover.run/dns?q=${1} | jq '.Results')
 if [[ "${OUTPUT}" = "null" ]]
 then
-	echo "${0}: error: please provide a valid domain." >&2
+	echo "$(basename $0): error: please provide a valid domain." >&2
 	exit 1
 else
 	if [[ "${2}" = "-d" ]]
@@ -57,7 +57,7 @@ fi
 output(){
 if [[ -z "${2}" ]]
 then
-	echo "${0}: error: please provide output filename." >&2
+	echo "$(basename $0): error: please provide output filename." >&2
 	exit 1
 else
 	echo "${1}" > "${2}"
@@ -66,5 +66,5 @@ fi
 
 case ${2} in
 	-d|-h|-s|-sh) bufferover $1 $2 $3 $4;;
-	*) if [[ -z "${2}" ]]; then header; else echo "${0}: error: unknown option: \"${2}\"" >&2; exit 1; fi  ;;
+	*) if [[ -z "${2}" ]]; then header; else echo "$(basename $0): error: unknown option: \"${2}\"" >&2; exit 1; fi  ;;
 esac
