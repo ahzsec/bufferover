@@ -9,7 +9,7 @@ header(){ printf "\e[36mv1.1 @ phalanx project
 ██████╦╝██║░░░██║█████╗░░█████╗░░█████╗░░██████╔╝██║░░██║╚██╗░██╔╝█████╗░░██████╔╝
 ██╔══██╗██║░░░██║██╔══╝░░██╔══╝░░██╔══╝░░██╔══██╗██║░░██║░╚████╔╝░██╔══╝░░██╔══██╗
 ██████╦╝╚██████╔╝██║░░░░░██║░░░░░███████╗██║░░██║╚█████╔╝░░╚██╔╝░░███████╗██║░░██║
-╚═════╝░░╚═════╝░╚═╝░░░░░╚═╝░░░░░╚══════╝╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝\ntwitter: @0x0Cj\e[0m\n\n"
+╚═════╝░░╚═════╝░╚═╝░░░░░╚═╝░░░░░╚══════╝╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚═╝░░╚═╝\ntwitter: @ahzsec\e[0m\n\n"
 printf "Usage: $(basename $0) DOMAIN [OPTION] [-o output_file]\n\nOptions:\n\n	-d	Domains Extraction\n 	-h	Hosts Extraction\n	-s	Subdomains Extraction\n	-sh	Subdomains Hosts Extraction\n	-o	Outfileing Data\n\n"
 }
 
