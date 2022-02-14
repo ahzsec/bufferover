@@ -6,8 +6,6 @@ A DNS data extractor for penetration testers
 - git clone github.com/ahzsec/bufferover.git
 - `cp bufferover.sh /usr/bin/bufferover`
 
-![bufferover](https://g.top4top.io/p_1868o1map1.png)
-
 # Usage
 Option        | Description
 ------------- |-------------
@@ -23,25 +21,19 @@ Option        | Description
 ```
 bufferover github.com -d
 ```
-![domains](https://b.top4top.io/p_17147f0nf1.png)
-
-- Hosts extraction:
-```
-bufferover github.com -h
-```
-![hosts](https://c.top4top.io/p_1714tqomq2.png)
+![domains](preview/domains-extraction.png)
 
 - Subdomains extraction:
 ```
 bufferover github.com -s
 ```
-![subdomains](https://d.top4top.io/p_17141rakv3.png)
+![subdomains](preview/subdomains-extraction.png)
 
 - Subdomains hosts extraction:
 ```
 bufferover github.com -sh
 ```
-![subdomains hosts](https://e.top4top.io/p_1714w8n724.png)
+![subdomains hosts](preview/subdomains-hosts-extraction.png)
 
 - Data Outfiling:
 ```
