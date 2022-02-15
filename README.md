@@ -1,4 +1,4 @@
-# bufferover • ![Version](https://img.shields.io/badge/version-1.1-blue)
+# bufferover • ![Version](https://img.shields.io/badge/version-1.1.5-blue)
 A DNS data extractor for penetration testers
 
 # Installation
